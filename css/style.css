@@ -109,6 +109,8 @@ span {
     line-height: 11px;
     text-transform: uppercase;
     color: #0f0101;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover,
@@ -127,6 +129,9 @@ span {
     height: 4px;
     background-color: var(--hover-color);
     opacity: 0;
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .nav-wrapper:hover::after {
@@ -181,6 +186,8 @@ span {
         background-color: rgba(78, 198, 171,0.44) ;
         border: none;
         color: var(--product-color);
+
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
 
@@ -265,12 +272,16 @@ span {
     width: 200px;
     padding-left: 13px;
     background-color: #323232;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .product-price {
     text-align: center;
     background-color: rgba(50, 50, 50, 0.44);
     width: 55px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .product-wrapper {
@@ -297,19 +308,24 @@ span {
         padding-bottom: 86px;
         background-color: rgba(26, 22, 19, 0.52);
         opacity: 0;
+
+        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .product-list-item:hover .overlay {
+    .product-list-item:hover .overlay,
+    .product-list-item:focus .overlay {
         opacity:1;
         cursor: pointer;
     }
 
-    .product-text:hover .product-name{
+    .product-text:hover .product-name,
+    .product-text:focus .product-name{
         background-color: var(--hover-color);
         cursor: pointer;
     }
 
-    .product-text:hover .product-price{
+    .product-text:hover .product-price,
+    .product-text:focus .product-price {
         background-color: rgb(26, 188, 156, 0.44);
         cursor: pointer;
     }
@@ -329,6 +345,8 @@ span {
         margin-right: 8px;
         margin-bottom: 8px;
         padding: 14px;
+
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .icon-item:nth-child(n+4) {
